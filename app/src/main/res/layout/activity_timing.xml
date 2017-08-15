@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:text="Total Time"
+        android:id="@+id/totime"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Avg Speed:"
+        android:layout_alignParentStart="true"
+        android:id="@+id/avgspd"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/totime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calburn"
+        android:text="Calorie Burn:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/avgspd" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tdis"
+        android:layout_below="@+id/calburn"
+        android:layout_alignParentLeft="true"
+        android:text="Total Distance:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Show In Map"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/showbtn"
+        android:layout_below="@+id/tdis"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/ttime"
+        android:layout_alignTop="@+id/totime"
+        android:layout_alignRight="@+id/tedis"
+        android:layout_alignEnd="@+id/tedis"
+        android:layout_toRightOf="@+id/calburn"
+        android:layout_toEndOf="@+id/calburn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/avgspeed"
+        android:layout_alignTop="@+id/avgspd"
+        android:layout_alignRight="@+id/ttime"
+        android:layout_alignEnd="@+id/ttime"
+        android:layout_toRightOf="@+id/calburn"
+        android:layout_toEndOf="@+id/calburn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/showcal"
+        android:layout_above="@+id/tdis"
+        android:layout_alignRight="@+id/tdis"
+        android:layout_alignEnd="@+id/tdis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tedis"
+        android:layout_alignTop="@+id/tdis"
+        android:layout_alignRight="@+id/showbtn"
+        android:layout_alignEnd="@+id/showbtn"
+        android:layout_toRightOf="@+id/showcal"
+        android:layout_toEndOf="@+id/showcal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/cal"
+        android:layout_above="@+id/tdis"
+        android:layout_alignLeft="@+id/showcal"
+        android:layout_alignStart="@+id/showcal"
+        android:layout_alignRight="@+id/tedis"
+        android:layout_alignEnd="@+id/tedis" />
+
+</RelativeLayout>

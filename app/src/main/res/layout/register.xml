@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.hafiz.runmeter.RegisterActivity"
+    android:onClick="onRegisterClick">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdfdfd"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/TFuserName"
+        android:hint="USER NAME"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/TFpassword"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/TFuserName"
+        android:layout_alignLeft="@+id/TFuserName"
+        android:layout_alignStart="@+id/TFuserName"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/conpass"
+        android:gravity="center"
+        android:hint="CONFIRM PASSWORD"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/TFpassword"
+        android:layout_alignLeft="@+id/TFpassword"
+        android:layout_alignStart="@+id/TFpassword"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/weight"
+        android:gravity="center"
+        android:hint="WEIGHT"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/conpass"
+        android:layout_alignLeft="@+id/conpass"
+        android:layout_alignStart="@+id/conpass" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/height"
+        android:gravity="center"
+        android:hint="HEIGHT"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/weight"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/age"
+        android:gravity="center"
+        android:hint="AGE"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/height"
+        android:layout_alignLeft="@+id/height"
+        android:layout_alignStart="@+id/height" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/sex"
+        android:gravity="center"
+        android:hint="SEX"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/age"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/signup"
+        android:layout_below="@+id/sex"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="SIGNUP"
+        android:textSize="14dp"
+        android:onClick="onRegisterClick"
+        />
+
+</RelativeLayout>
