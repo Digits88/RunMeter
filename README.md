@@ -8,7 +8,8 @@ Description :
 4. GPS will calculate the distance 
 5. It can be use for running or cycling 
 
-How to run this project :
 
+
+How to run this project :
 1.Download it and import project to your by Android Studio
 2.Import project to Android Studio and make it apk file . 
